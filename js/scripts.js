@@ -1,3 +1,24 @@
+// UI Logic
+
+$(document).ready(function() {
+  $("form").submit(function(event) {
+    event.preventDefault();
+
+    let userInput = parseInt($("#userInput").val());
+    console.log(responseArray(userInput));
+  });
+});
+
+// Business Logic
+
+function responseArray (userInput) {
+  let inputArray = [userInput];
+  for (index = userInput; index > 0; index--) {
+    inputArray.push(index - 1);
+  }
+  inputArray.reverse();
+  return inputArray
+}
 
 
 
