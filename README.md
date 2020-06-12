@@ -38,7 +38,7 @@ This website xxx. You may view the published site on [GitHub Pages](https://kate
   * Input: user clicks input form after a prior submission
   * Output: previous output will disappear 
 
-**Behavior**: Program will only let a user input a number
+**Behavior**: Program will only let a user input a number, 0 or greater
   * Input: "hello"
   * Output: "alert: Please enter a number!"
 
