@@ -1,3 +1,5 @@
+![Mr.Roboger](img/roboger.jpg)
+
 # Mr. Roboger's Neighborhood
 
 #### Arrays & Looping for Epicodus, 06.12.2020
@@ -14,7 +16,7 @@ This website let's users talk to Mr. Roboger! If users submit a number, they wil
   * Input: "hello"
   * Output: "alert: Please enter a number!"
 
-**Behavior**: Program will return a range of numbers from 0 to the users inputted number
+**Behavior**: Program will return a range of numbers from 0 to the user's inputted number
   * Input: "4"
   * Output: "0, 1, 2, 3, 4"
 
@@ -39,8 +41,8 @@ This website let's users talk to Mr. Roboger! If users submit a number, they wil
   * Output: "'0', 'Beep!', 'Boop!', ... 9, 'Beep!', 'Beep!', 'Boop!'"
 
 **Behavior**: Program will reset so user can enter a new number and see new results
-  * Input: user clicks input form after a prior submission
-  * Output: previous output will disappear 
+  * Input: *user clicks input form after a prior submission*
+  * Output: *previous output will disappear* 
 
 
 ## Setup/Installation Requirements
