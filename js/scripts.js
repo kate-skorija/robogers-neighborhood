@@ -6,19 +6,16 @@ $(document).ready(function() {
 
     let userInput = $("#userInput").val();
     let inputArray = responseArray(userInput);
-    let splitArray = splitDigits(inputArray);
-    // let changedArray = replaceDigits(responseArray(userInput));
-        
-    console.log(inputArray);
-    // console.log(changedArray);
-    console.log(splitArray);
+   
+    console.log(inputArray)
+    console.log(putTogether(inputArray));
 
   });
 });
 
 // Business Logic
 
-function responseArray (userInput) {   // returns an array of numbers up to user input
+function responseArray (userInput) {                    // returns an array of numbers up to user input
   let inputArray = [userInput];
   for (index = userInput; index > 0; index--) {
     inputArray.push(index - 1)
@@ -28,32 +25,105 @@ function responseArray (userInput) {   // returns an array of numbers up to user
   return stringArray
 }
 
-
-function splitDigits (inputArray) {
+function splitDigits (inputArray) {                      // splits each number in array of numbers into digits
   let splitArray = [];
   for (const element of inputArray) {
     let splitArray = element.split("");
-    console.log(splitArray);
     }
-    return splitArray
-  }
-
-function replaceDigits (splitArray) {
-  for (let i = splitArray.length - 1; i >=0; i--) {
-    if (i === "3") {
-      splitArray = [];
-      splitArray.push("Won't you be my neighbor?")
-    } else if (i === "2") { 
-      splitArray = [];
-      splitArray.push("Boop!")
-    } else if (i === "1") { 
-      splitArray = [];
-      splitArray.push("Beep!")
+  let newSplitArray = [];
+  for (const element of splitArray) {
+    if (element === "3") {
+      newSplitArray = [];
+      newSplitArray.push("Won't you be my neighbor?")
+    } else if (element === "2") { 
+      newSplitArray = [];
+      newSplitArray.push("Boop!")
+    } else if (element === "1") {
+      newSplitArray = [];
+      newSplitArray.push("Beep!")
     }
   }
-  console.log(splitArray);
-  return splitArray
+  return newSplitArray
 }
+
+function putTogether (inputArray) {
+  inputArray.forEach(function(number) {
+    
+  })
+  return inputArray
+}
+
+
+
+
+
+// function splitDigits (inputArray) {                      // splits each number in array of numbers into digits
+//   let splitArray = [];
+//   for (const element of inputArray) {
+//     let splitArray = element.split("");
+//     }
+//     return splitArray
+//   }
+
+// function replaceDigits (splitArray) {                  // replaces 1's, 2's, & 3's with 
+//   let newSplitArray = [];
+//   for (const element of splitArray) {
+//     if (element === "3") {
+//       newSplitArray = [];
+//       newSplitArray.push("Won't you be my neighbor?")
+//     } else if (element === "2") { 
+//       newSplitArray = [];
+//       newSplitArray.push("Boop!")
+//     } else if (element === "1") {
+//       newSplitArray = [];
+//       newSplitArray.push("Beep!")
+//     }
+//   }
+//   return newSplitArray
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// function topString (newSplitArray) {
+//   let topString = [];
+//   for (const element of newSplitArray) {
+//     if (element = )
+//   }
+// }
+
+
+// function replaceDigits (splitArray) {
+//   let newSplitArray = [];
+//   for (let i = splitArray.length - 1; i >=0; i--) {
+//     if (i === "3") {
+//       splitArray = [];
+//       splitArray.push("Won't you be my neighbor?")
+//     } else if (i === "2") { 
+//       splitArray = [];
+//       splitArray.push("Boop!")
+//     } else if (i === "1") { 
+//       splitArray = [];
+//       splitArray.push("Beep!")
+//     }
+//   }
+//   console.log(splitArray);
+//   return splitArray
+// }
 
 // function replaceDigits (inputArray) {
 //   for (index = 0; index < inputArray.length; index++) {
