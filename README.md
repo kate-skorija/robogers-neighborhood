@@ -14,17 +14,29 @@ This website xxx. You may view the published site on [GitHub Pages](https://kate
   * Input: "4"
   * Output: "0, 1, 2, 3, 4"
 
-**Behavior**: Program will replace all 1's with "Beep!"
+**Behavior**: Program will replace the number 1 with "Beep!"
   * Input: "1"
   * Output: "'0', 'Beep!'"
 
-**Behavior**: Program will replace all 2's with "Boop!"
+**Behavior**: Program will replace the number 2 with "Boop!"
   * Input: "2"
   * Output: "'0', 'Beep!', 'Boop!'"
 
-**Behavior**: Program will replace all 3's with "Won't you be my neighbor?"
+**Behavior**: Program will replace the number 3 with "Won't you be my neighbor?"
   * Input: "3"
   * Output: "'0', 'Beep!', 'Boop!', 'Won't you be my neighbor?'"
+
+**Behavior**: Program will replace any number with 1 as any digit with "Beep!"
+ * Input: "10"
+ * Output: "0, ... 9, 'Beep!'"
+
+**Behavior**: Program will replace any number with 2 as any digit with "Boop!"
+ * Input: "12"
+ * Output: "0, ... 9, 'Beep!', 'Beep!', 'Boop!',"
+
+**Behavior**: Program will replace any number with 3 as any digit with "Won't you be my neighbor?"
+ * Input: "13"
+ * Output: "0, ... 9, 'Beep!', 'Beep!', 'Boop!', 'Won't you be my neighbor?'"
 
 **Behavior**: Program will apply the rule for 3's over the rule for 1's or 2's
   * Input: "13"
