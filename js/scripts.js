@@ -10,7 +10,7 @@ $(document).ready(function() {
     
     console.log(inputArray);
     // console.log(changedArray);
-    console.log(splitDigits(responseArray(inputArray)));
+    console.log(splitDigits(inputArray));
 
   });
 });
@@ -27,16 +27,23 @@ function responseArray (userInput) {   // returns an array of numbers up to user
   return stringArray
 }
 
+
 function splitDigits (inputArray) {
   let splitArray = [];
   for (const element of inputArray) {
     let splitArray = element.split("")
-    console.log(splitArray);
-    }
-  return splitArray
-  }
-  
 
+    splitArray.forEach(function(digit) {
+    if (digit === "1") { 
+      splitArray = [];
+      splitArray.push("Beep!")
+      
+    }
+    console.log(splitArray);
+    return splitArray
+    });
+  }
+}
 
 
 // function replaceDigits (inputArray) {
@@ -66,10 +73,10 @@ function splitDigits (inputArray) {
 
 // Program will return a range of numbers from 0 to the users inputted number DONE!
 // Program will replace all 1's with "Beep!" DONE!
-// Program will replace all 2's with "Boop!"
-// Program will replace all 3's with "Won't you be my neighbor?"
+// Program will replace all 2's with "Boop!" DONE!
+// Program will replace all 3's with "Won't you be my neighbor?" DONE!
 // Program will apply the rule for 3's over the rule for 1's or 2's
 // Program will apply the rule for 2's over the rule for 1's
 // Program will reset so user can enter a new number and see new results
-// Program will only let a user input a number, 0 or greater
-
+// Program will only let a user input a number, 0 or greater 
+//
