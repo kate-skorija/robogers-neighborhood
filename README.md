@@ -1,4 +1,4 @@
-##### Mr. Roboger's Neighborhood
+# Mr. Roboger's Neighborhood
 
 #### Arrays & Looping for Epicodus, 06.12.2020
 
@@ -6,25 +6,17 @@
 
 ## Description
 
-This website xxx. You may view the published site on [GitHub Pages](https://kate-skorija.github.io/xxx).
+This website let's users talk to Mr. Roboger! If users submit a number, they will be supplied with Mr. Roboger's response. Mr. Roboger's language is very specific, and I used a JavaScript for loop to make sure the right response is returned.  You may view the published site on [GitHub Pages](https://kate-skorija.github.io/xxx).
 
 ## Specifications
+
+**Behavior**: Program will only let a user input a number, 0 or greater
+  * Input: "hello"
+  * Output: "alert: Please enter a number!"
 
 **Behavior**: Program will return a range of numbers from 0 to the users inputted number
   * Input: "4"
   * Output: "0, 1, 2, 3, 4"
-
-**Behavior**: Program will replace the number 1 with "Beep!"
-  * Input: "1"
-  * Output: "'0', 'Beep!'"
-
-**Behavior**: Program will replace the number 2 with "Boop!"
-  * Input: "2"
-  * Output: "'0', 'Beep!', 'Boop!'"
-
-**Behavior**: Program will replace the number 3 with "Won't you be my neighbor?"
-  * Input: "3"
-  * Output: "'0', 'Beep!', 'Boop!', 'Won't you be my neighbor?'"
 
 **Behavior**: Program will replace any number with 1 as any digit with "Beep!"
  * Input: "10"
@@ -50,9 +42,6 @@ This website xxx. You may view the published site on [GitHub Pages](https://kate
   * Input: user clicks input form after a prior submission
   * Output: previous output will disappear 
 
-**Behavior**: Program will only let a user input a number, 0 or greater
-  * Input: "hello"
-  * Output: "alert: Please enter a number!"
 
 ## Setup/Installation Requirements
 

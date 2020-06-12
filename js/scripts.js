@@ -22,13 +22,13 @@ function robogerResponse (numberInput) {
 
   for (let i = 0; i <= numberInput; i++) {
     if (i.toString().includes("3")) {
-      responseArray.push("Will you be my neighbor?");
+      responseArray.push(" Will you be my neighbor?");
     } else if (i.toString().includes("2")) { 
-      responseArray.push("Boop!");
+      responseArray.push(" Boop!");
     } else if (i.toString().includes("1")) { 
-      responseArray.push("Beep!"); 
+      responseArray.push(" Beep!"); 
     } else {
-      responseArray.push(i); 
+      responseArray.push(" " + i); 
     }
   }
   return responseArray
