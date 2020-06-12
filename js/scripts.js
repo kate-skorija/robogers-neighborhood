@@ -6,11 +6,12 @@ $(document).ready(function() {
 
     let userInput = $("#userInput").val();
     let inputArray = responseArray(userInput);
+    let splitArray = splitDigits(inputArray);
     // let changedArray = replaceDigits(responseArray(userInput));
-    
+        
     console.log(inputArray);
     // console.log(changedArray);
-    console.log(splitDigits(inputArray));
+    console.log(splitArray);
 
   });
 });
@@ -31,20 +32,28 @@ function responseArray (userInput) {   // returns an array of numbers up to user
 function splitDigits (inputArray) {
   let splitArray = [];
   for (const element of inputArray) {
-    let splitArray = element.split("")
+    let splitArray = element.split("");
+    console.log(splitArray);
+    }
+    return splitArray
+  }
 
-    splitArray.forEach(function(digit) {
-    if (digit === "1") { 
+function replaceDigits (splitArray) {
+  for (let i = splitArray.length - 1; i >=0; i--) {
+    if (i === "3") {
+      splitArray = [];
+      splitArray.push("Won't you be my neighbor?")
+    } else if (i === "2") { 
+      splitArray = [];
+      splitArray.push("Boop!")
+    } else if (i === "1") { 
       splitArray = [];
       splitArray.push("Beep!")
-      
     }
-    console.log(splitArray);
-    return splitArray
-    });
   }
+  console.log(splitArray);
+  return splitArray
 }
-
 
 // function replaceDigits (inputArray) {
 //   for (index = 0; index < inputArray.length; index++) {
