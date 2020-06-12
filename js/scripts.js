@@ -10,7 +10,7 @@ $(document).ready(function() {
     $(".response").text(robogerArray);
     $("#results").show();
     $("#reset").click(function(){
-      $("#results").hide();
+    $("#results").hide();
     })
   });
 });
@@ -19,7 +19,6 @@ $(document).ready(function() {
 
 function robogerResponse (userInput) {
   let responseArray = [];
-
   for (let i = 0; i <= userInput; i++) {
     if (i.toString().includes("3")) {
       responseArray.push(" Will you be my neighbor?");

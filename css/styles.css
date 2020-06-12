@@ -1,24 +1,6 @@
-#results {
-  display: none;
-  margin-top: 20px;
-  font-weight: bold;
-  font-size: 2em;
-}
-
-.response {
-  margin-top: 10px;
-  font-weight: normal;
-  font-family: 'Roboto', sans-serif;
-}
-
-label {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2em;
-}
-
 body {
-background-color: gray;
-}
+  background-color: gray;
+  }
 
 .container-fluid {
   padding: 50px;
@@ -33,6 +15,28 @@ h1 {
   
 }
 
+/* Form -------------------------------- */
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
 button {
   font-family: 'Bungee', cursive;
+}
+
+/* Results ----------------------------- */
+
+#results {
+  display: none;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.response {
+  margin-top: 10px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
 }

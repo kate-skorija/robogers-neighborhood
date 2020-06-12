@@ -8,7 +8,7 @@
 
 ## Description
 
-This website let's users talk to Mr. Roboger! If users submit a number, they will be supplied with Mr. Roboger's response. Mr. Roboger's language is very specific, and I used a JavaScript for loop to make sure the right response is returned. I also implemented if/else logic to ensure that the correct value was displayed over other possible values. You may view the published site on [GitHub Pages](https://kate-skorija.github.io/xxx).
+This week I practiced arrays and looping with JavaScript. This project is a take on the classic Fizz Buzz prompt. It let's users talk to a robot, Mr. Roboger. If users submit a number in the provided form, they will be supplied with Mr. Roboger's response. You may view the published site on [GitHub Pages](https://kate-skorija.github.io/robogers-neighborhood/).
 
 ## Specifications
 
