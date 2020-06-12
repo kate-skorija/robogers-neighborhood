@@ -6,10 +6,11 @@ $(document).ready(function() {
 
     let userInput = $("#userInput").val();
     let inputArray = responseArray(userInput);
-
     // let changedArray = replaceDigits(responseArray(userInput));
+    
     console.log(inputArray);
     // console.log(changedArray);
+    console.log(splitDigits(responseArray(inputArray)));
 
   });
 });
@@ -23,27 +24,34 @@ function responseArray (userInput) {   // returns an array of numbers up to user
   }
   inputArray.reverse();
   let stringArray = inputArray.map(String)
-  return stringArray 
+  return stringArray
 }
+
+function splitDigits (inputArray) {
+  let splitArray = [];
+  for (const element of inputArray) {
+    let splitArray = element.split("")
+    console.log(splitArray);
+    }
+  return splitArray
+  }
+  
+
+
 
 // function replaceDigits (inputArray) {
 //   for (index = 0; index < inputArray.length; index++) {
-//     if (inputArray[index] === 1) {
+//     if (inputArray[index] === "1") {
 //       inputArray.splice(index, 1, "Beep!");
-//     } else if (inputArray[index] === 2) {
+//     } else if (inputArray[index] === "2") {
 //       inputArray.splice(index, 1, "Boop!");
-//     } else if (inputArray[index] === 3) {
+//     } else if (inputArray[index] === "3") {
 //       inputArray.splice(index, 1, "Won't you be my neighbor?")
 //     }
 //   }
 //   return inputArray
 // }
 
-// function replaceDigits (inputArray) {
-//   let splitArray = inputArray.split(" ")
-//   let newArray = [];
-//   return splitArray
-// }
 
 
 // function replaceDigits (inputArray) {
