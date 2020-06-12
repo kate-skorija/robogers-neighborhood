@@ -17,10 +17,10 @@ $(document).ready(function() {
 
 // Business Logic
 
-function robogerResponse (numberInput) {
+function robogerResponse (userInput) {
   let responseArray = [];
 
-  for (let i = 0; i <= numberInput; i++) {
+  for (let i = 0; i <= userInput; i++) {
     if (i.toString().includes("3")) {
       responseArray.push(" Will you be my neighbor?");
     } else if (i.toString().includes("2")) { 

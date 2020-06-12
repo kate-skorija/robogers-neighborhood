@@ -6,7 +6,7 @@
 
 ## Description
 
-This website let's users talk to Mr. Roboger! If users submit a number, they will be supplied with Mr. Roboger's response. Mr. Roboger's language is very specific, and I used a JavaScript for loop to make sure the right response is returned.  You may view the published site on [GitHub Pages](https://kate-skorija.github.io/xxx).
+This website let's users talk to Mr. Roboger! If users submit a number, they will be supplied with Mr. Roboger's response. Mr. Roboger's language is very specific, and I used a JavaScript for loop to make sure the right response is returned. I also implemented if/else logic to ensure that the correct value was displayed over other possible values. You may view the published site on [GitHub Pages](https://kate-skorija.github.io/xxx).
 
 ## Specifications
 

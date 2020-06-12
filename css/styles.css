@@ -1,3 +1,38 @@
 #results {
   display: none;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.response {
+  margin-top: 10px;
+  font-weight: normal;
+  font-family: 'Roboto', sans-serif;
+}
+
+label {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2em;
+}
+
+body {
+background-color: gray;
+}
+
+.container-fluid {
+  padding: 50px;
+  color: black;
+}
+
+h1 {
+  font-family: 'Bungee Shade', cursive;
+  font-size: 6em;
+  max-width: 80%;
+  margin-bottom: 50px;
+  
+}
+
+button {
+  font-family: 'Bungee', cursive;
 }
