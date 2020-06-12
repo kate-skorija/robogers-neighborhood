@@ -4,35 +4,56 @@ $(document).ready(function() {
   $("form").submit(function(event) {
     event.preventDefault();
 
-    let userInput = parseInt($("#userInput").val());
+    let userInput = $("#userInput").val();
     let inputArray = responseArray(userInput);
-    let changedArray = replaceDigits(responseArray(userInput));
+
+    // let changedArray = replaceDigits(responseArray(userInput));
     console.log(inputArray);
-    console.log(changedArray);
+    // console.log(changedArray);
+
   });
 });
 
 // Business Logic
 
-function responseArray (userInput) {
+function responseArray (userInput) {   // returns an array of numbers up to user input
   let inputArray = [userInput];
   for (index = userInput; index > 0; index--) {
-    inputArray.push(index - 1);
+    inputArray.push(index - 1)
   }
   inputArray.reverse();
-  return inputArray
+  let stringArray = inputArray.map(String)
+  return stringArray 
 }
 
-function replaceDigits (inputArray) {
-  for (index = 0; index < inputArray.length; index++) {
-    if (inputArray[index] === 1) {
-      inputArray.splice(index, 1, "Beep!");
-    } else if (inputArray[index] === 2) {
-      inputArray.splice(index, 1, "Boop!");
-    }
-  }
-  return inputArray
-}
+// function replaceDigits (inputArray) {
+//   for (index = 0; index < inputArray.length; index++) {
+//     if (inputArray[index] === 1) {
+//       inputArray.splice(index, 1, "Beep!");
+//     } else if (inputArray[index] === 2) {
+//       inputArray.splice(index, 1, "Boop!");
+//     } else if (inputArray[index] === 3) {
+//       inputArray.splice(index, 1, "Won't you be my neighbor?")
+//     }
+//   }
+//   return inputArray
+// }
+
+// function replaceDigits (inputArray) {
+//   let splitArray = inputArray.split(" ")
+//   let newArray = [];
+//   return splitArray
+// }
+
+
+// function replaceDigits (inputArray) {
+//   for (const element of inputArray) {
+//     element.split("")
+//     if (element[index] === 1)
+//     inputArray.splice(element, 1, "Beep!")
+//   }
+//   return inputArray
+// }
 
 
 // Program will return a range of numbers from 0 to the users inputted number DONE!
