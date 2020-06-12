@@ -5,7 +5,10 @@ $(document).ready(function() {
     event.preventDefault();
 
     let userInput = parseInt($("#userInput").val());
-    console.log(responseArray(userInput));
+    let inputArray = responseArray(userInput);
+    let changedArray = replaceDigits(responseArray(userInput));
+    console.log(inputArray);
+    console.log(changedArray);
   });
 });
 
@@ -20,27 +23,14 @@ function responseArray (userInput) {
   return inputArray
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+function replaceDigits (inputArray) {
+  for (index = 0; index < inputArray.length; index++) {
+    if (inputArray[index] === 1) {
+      inputArray.splice(index, 1, "Beep!");
+    }
+  }
+  return inputArray
+}
 
 
 // Program will return a range of numbers from 0 to the users inputted number
